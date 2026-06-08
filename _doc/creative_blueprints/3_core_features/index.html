@@ -1,0 +1,114 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-1 h-5 rounded-full" style="background:#F59E0B;"></div>
+          <span class="text-xs font-semibold uppercase tracking-widest" style="color:#64748B;">Core Features</span>
+        </div>
+        <h2 class="font-extrabold text-2xl leading-tight" style="color:#1E3A5F;">Built for how managers actually work</h2>
+      </div>
+      <!-- Persona chip -->
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full border-2 font-semibold text-sm" style="border-color:#1E3A5F; color:#1E3A5F; background:#EFF6FF;">
+        <span>👔</span> Moving Company Manager
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Job Booking -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#1E3A5F;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#F59E0B;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="14" rx="2" stroke="white" stroke-width="1.5"/><path d="M6 1v4M14 1v4M2 8h16" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#FFFFFF;">Job Booking</div>
+          <div class="text-xs leading-relaxed" style="color:#CBD5E1;">Create and manage jobs with origin, destination, date, customer info, and special handling notes. Calendar and list views with full status workflow.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#F59E0B; color:#1E3A5F;">Booked → In Progress → Done</span>
+        </div>
+      </div>
+
+      <!-- Crew Assignment -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#DBEAFE;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="7" cy="7" r="3" stroke="#1E3A5F" stroke-width="1.5"/><path d="M2 17c0-3 2.2-5 5-5s5 2 5 5" stroke="#1E3A5F" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="7" r="2.5" stroke="#1E3A5F" stroke-width="1.5"/><path d="M17 17c0-2-1.3-3.5-3-4" stroke="#1E3A5F" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#1E3A5F;">Crew Assignment</div>
+          <div class="text-xs leading-relaxed" style="color:#475569;">Assign crew members to jobs based on availability. Visual assignment board with automatic double-booking conflict detection.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#DBEAFE; color:#1E3A5F;">Conflict Detection</span>
+        </div>
+      </div>
+
+      <!-- Truck Logistics -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#FEF3C7;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="1" y="8" width="12" height="7" rx="1.5" stroke="#B45309" stroke-width="1.5"/><path d="M13 10h3l2 3v2h-5V10Z" stroke="#B45309" stroke-width="1.5" stroke-linejoin="round"/><circle cx="4.5" cy="16.5" r="1.5" fill="#B45309"/><circle cx="15.5" cy="16.5" r="1.5" fill="#B45309"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#1E3A5F;">Truck Logistics</div>
+          <div class="text-xs leading-relaxed" style="color:#475569;">Manage your fleet — capacity, availability, and maintenance status. Assign trucks to jobs and track utilization across the full schedule.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#FEF3C7; color:#B45309;">Fleet Utilization</span>
+        </div>
+      </div>
+
+      <!-- Schedule Board -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#F0FDF4;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="2" stroke="#15803D" stroke-width="1.5"/><path d="M6 10h8M6 13h5" stroke="#15803D" stroke-width="1.5" stroke-linecap="round"/><path d="M6 7h8" stroke="#15803D" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#1E3A5F;">Schedule Board</div>
+          <div class="text-xs leading-relaxed" style="color:#475569;">Master daily and weekly view combining jobs, crew, and trucks at a glance. Highlights conflicts, understaffed jobs, and idle assets instantly.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#F0FDF4; color:#15803D;">Daily + Weekly</span>
+        </div>
+      </div>
+
+      <!-- Damage Reporting -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#FFF7ED;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#C2410C" stroke-width="1.5"/><path d="M10 6v4M10 13v1" stroke="#C2410C" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#1E3A5F;">Damage Reporting</div>
+          <div class="text-xs leading-relaxed" style="color:#475569;">Log incidents per job with photos. Builds a verified damage trail for insurance claims and continuous quality improvement.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#FFF7ED; color:#C2410C;">Photo Evidence</span>
+        </div>
+      </div>
+
+      <!-- Admin Dashboard -->
+      <div class="rounded-2xl p-5 flex flex-col gap-3" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#F5F3FF;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" rx="1.5" stroke="#7C3AED" stroke-width="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5" stroke="#7C3AED" stroke-width="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5" stroke="#7C3AED" stroke-width="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5" stroke="#7C3AED" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-sm mb-1" style="color:#1E3A5F;">Admin Dashboard</div>
+          <div class="text-xs leading-relaxed" style="color:#475569;">Summary metrics at a glance — jobs today, crew utilization, trucks in use. The morning briefing view before the day starts.</div>
+        </div>
+        <div class="mt-auto">
+          <span class="text-xs px-2 py-1 rounded-full font-semibold" style="background:#F5F3FF; color:#7C3AED;">Live Metrics</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
