@@ -1,0 +1,1 @@
+Build me an app for moving company managers to help them manage job bookings, crew assignments, and truck logistics with the goal to complete every move on schedule with zero damage
