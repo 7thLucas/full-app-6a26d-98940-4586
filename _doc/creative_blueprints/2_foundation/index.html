@@ -1,0 +1,85 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; align-items: stretch; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-left flex flex-col justify-center gap-8 p-12">
+
+      <!-- Slide label -->
+      <div class="flex items-center gap-2">
+        <div class="w-1 h-5 rounded-full" style="background:#F59E0B;"></div>
+        <span class="text-xs font-semibold uppercase tracking-widest" style="color:#64748B;">Why MoveOps Exists</span>
+      </div>
+
+      <!-- Problem block -->
+      <div class="rounded-2xl p-7" style="background:#F8FAFC; border:1px solid #E2E8F0;">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">⚠️</span>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color:#DC2626;">The Problem</span>
+        </div>
+        <h2 class="font-bold text-xl leading-snug mb-3" style="color:#1E3A5F;">
+          Moves fall apart before they start
+        </h2>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Moving company managers juggle bookings in spreadsheets, crew availability over the phone, and truck schedules across whiteboards. Miscommunication means jobs start late, crews show up understaffed, and trucks arrive at the wrong site — damaging goods, trust, and revenue.
+        </p>
+        <div class="flex flex-col gap-2 mt-4">
+          <div class="flex items-start gap-2 text-sm" style="color:#64748B;">
+            <span style="color:#DC2626; font-weight:700; flex-shrink:0;">✕</span> Fragmented tools — no single source of truth
+          </div>
+          <div class="flex items-start gap-2 text-sm" style="color:#64748B;">
+            <span style="color:#DC2626; font-weight:700; flex-shrink:0;">✕</span> Double-booked crews and idle trucks
+          </div>
+          <div class="flex items-start gap-2 text-sm" style="color:#64748B;">
+            <span style="color:#DC2626; font-weight:700; flex-shrink:0;">✕</span> No damage trail — disputes with no data
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution block -->
+      <div class="rounded-2xl p-7" style="background:#1E3A5F;">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">✦</span>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color:#F59E0B;">The Solution</span>
+        </div>
+        <h2 class="font-bold text-xl leading-snug mb-3" style="color:#FFFFFF;">
+          One hub for every moving operation
+        </h2>
+        <p class="text-sm leading-relaxed" style="color:#CBD5E1;">
+          MoveOps replaces scattered tools with a single real-time operations platform — purpose-built for moving companies. Managers book jobs, assign crews with conflict detection, dispatch trucks, and track every move from booked to completed.
+        </p>
+        <div class="flex flex-col gap-2 mt-4">
+          <div class="flex items-start gap-2 text-sm" style="color:#93C5FD;">
+            <span style="color:#F59E0B; font-weight:700; flex-shrink:0;">✓</span> Unified job, crew, and truck view
+          </div>
+          <div class="flex items-start gap-2 text-sm" style="color:#93C5FD;">
+            <span style="color:#F59E0B; font-weight:700; flex-shrink:0;">✓</span> Real-time conflict detection
+          </div>
+          <div class="flex items-start gap-2 text-sm" style="color:#93C5FD;">
+            <span style="color:#F59E0B; font-weight:700; flex-shrink:0;">✓</span> Damage log with photo evidence per job
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right relative overflow-hidden" style="background:#F1F5F9;">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=A%20stressed%20moving%20company%20manager%20surrounded%20by%20paper%20schedules%20and%20sticky%20notes%2C%20then%20split%20scene%20with%20a%20calm%20manager%20at%20a%20clean%20digital%20dashboard%20on%20a%20tablet%2C%20professional%2C%20editorial%2C%20warm%20lighting"
+        alt="Problem vs solution"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background:linear-gradient(to right, #F1F5F9 0%, transparent 30%);"></div>
+    </div>
+
+  </div>
+</section>
